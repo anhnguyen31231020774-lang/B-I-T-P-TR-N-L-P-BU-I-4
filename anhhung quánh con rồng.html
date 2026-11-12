@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Hùng JavaScript - Đại Chiến Rồng Già</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚔️ ANH HÙNG JAVASCRIPT VS RỒNG GIÀ 🐉</h1>
+        <div id="hero-journey" class="journey-box"></div>
+    </header>
+
+    <main class="arena" id="arena">
+        <div class="fighter hero" id="hero-box">
+            <div class="badge" id="hero-class">Chiến Binh</div>
+            <h2 id="hero-name">Anh Hùng</h2>
+            <div class="avatar-wrapper">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 220'><rect width='200' height='220' fill='%230d253f'/><circle cx='100' cy='110' r='75' fill='%23d90429'/><circle cx='100' cy='110' r='55' fill='%23ffffff'/><circle cx='100' cy='110' r='35' fill='%23d90429'/><circle cx='100' cy='110' r='20' fill='%230077b6'/><polygon points='100,92 105,105 119,105 108,113 112,126 100,118 88,126 92,113 81,105 95,105' fill='%23ffffff'/></svg>" alt="Anh Hùng" id="hero-img">
+                <div class="damage-popup" id="hero-dmg"></div>
+            </div>
+            <div class="hp-container">
+                <div class="hp-bar hero-hp" id="hero-hp-bar"></div>
+            </div>
+            <p class="hp-text">Máu: <span id="hero-hp-text">105</span> / <span id="hero-max-hp">105</span></p>
+            <div class="stats-box" id="hero-stats"></div>
+        </div>
+
+        <div class="vs-sign">VS</div>
+
+        <div class="fighter dragon" id="dragon-box">
+            <div class="badge dragon-badge">BOSS</div>
+            <h2>Rồng Già</h2>
+            <div class="avatar-wrapper">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 220'><rect width='200' height='220' fill='%232b090e'/><circle cx='100' cy='110' r='70' fill='%239b111e'/><polygon points='50,60 70,20 85,65' fill='%23ffd166'/><polygon points='150,60 130,20 115,65' fill='%23ffd166'/><circle cx='78' cy='95' r='10' fill='%23ffbe0b'/><circle cx='122' cy='95' r='10' fill='%23ffbe0b'/><circle cx='78' cy='95' r='4' fill='%23000'/><circle cx='122' cy='95' r='4' fill='%23000'/><path d='M65,140 Q100,175 135,140 Q100,155 65,140 Z' fill='%23ff5400'/><polygon points='75,143 82,158 89,145' fill='%23fff'/><polygon points='111,145 118,158 125,143' fill='%23fff'/></svg>" alt="Rồng Già" id="dragon-img">
+                <div class="damage-popup" id="dragon-dmg"></div>
+            </div>
+            <div class="hp-container">
+                <div class="hp-bar dragon-hp" id="dragon-hp-bar"></div>
+            </div>
+            <p class="hp-text">Máu: <span id="dragon-hp-text">600</span> / 600</p>
+            <div class="stats-box">
+                <p>⚔️ Sức mạnh: <b>100</b></p>
+                <p>💨 Né tránh: <b>15%</b></p>
+                <p>🔥 Chí mạng: <b>80%</b></p>
+            </div>
+        </div>
+    </main>
+
+    <section class="controls">
+        <button id="btn-start" onclick="startBattle()">🔥 BẮT ĐẦU CHIẾN ĐẤU 🔥</button>
+        <div id="battle-log" class="battle-log">
+            <p class="log-system">Hệ thống sẵn sàng. Nhấn nút bên trên để giao chiến!</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
